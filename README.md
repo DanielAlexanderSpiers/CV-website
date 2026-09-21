@@ -4,8 +4,7 @@ My personal CV site, live at [danielspiers.com](https://danielspiers.com).
 
 I'm Daniel Spiers, a Year 12 student at Birkenhead Sixth Form College studying
 Statistics, Computer Science and Economics. This site is where I keep my CV,
-grades, skills and projects in one place so anyone can see them without asking
-for a PDF.
+grades, skills and projects in one place so anyone can see them.
 
 ## What's on the site
 
@@ -33,7 +32,3 @@ public/
 
 The contact form sends through Web3Forms with a honeypot field and a client-side
 rate limit, so there's no backend to run.
-
-## Running it
-
-Open `public/index.html` in a browser. That's it.
