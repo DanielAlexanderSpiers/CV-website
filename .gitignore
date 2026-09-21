@@ -1,0 +1,12 @@
+node_modules/
+.wrangler/
+.dev.vars
+*.bak
+deploy.bat
+wrangler.toml
+package.json
+package-lock.json
+IMPROVEMENTS.txt
+ROADMAP.txt
+README.txt
+.claude/
