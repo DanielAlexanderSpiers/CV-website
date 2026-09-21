@@ -32,3 +32,23 @@ public/
 
 The contact form sends through Web3Forms with a honeypot field and a client-side
 rate limit, so there's no backend to run.
+
+## Security
+
+[![Security Headers: A+](https://img.shields.io/badge/Security%20Headers-A%2B-brightgreen)](https://securityheaders.com/?q=danielspiers.com&followRedirects=on)
+
+The site scores **A+** on [securityheaders.com](https://securityheaders.com/?q=danielspiers.com&followRedirects=on).
+Every response carries:
+
+| Header | Value |
+|---|---|
+| Content-Security-Policy | `default-src 'none'` with only the site's own scripts, Google Fonts and the form endpoint allowed |
+| Strict-Transport-Security | 1 year, subdomains included, preload |
+| X-Frame-Options | `DENY` |
+| X-Content-Type-Options | `nosniff` |
+| Referrer-Policy | `strict-origin-when-cross-origin` |
+| Permissions-Policy | camera, microphone, geolocation, payment and USB all off |
+| Cross-Origin-Opener-Policy | `same-origin` |
+| Cross-Origin-Resource-Policy | `same-origin` |
+
+HTTP redirects to HTTPS, `www` redirects to the root domain, and no inline JavaScript is used so the CSP can stay strict.
