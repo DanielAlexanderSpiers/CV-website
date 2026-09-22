@@ -13,3 +13,4 @@ README.txt
 build-pdf.bat
 pdf-build.log
 wd.log
+*.log

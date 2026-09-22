@@ -559,11 +559,15 @@ footer{
   .chips a{background:transparent!important;color:#000!important}
   body{background:#fff;background-image:none;color:#000;font-size:11pt}
   .wrap{max-width:none;padding:0;gap:1.25rem}
-  .card{box-shadow:none;border-radius:0}
+  .card{box-shadow:none;border-radius:0;border:0}
   [role="tabpanel"][hidden]{display:block!important}
   .panel{padding:0;page-break-inside:avoid}
-  .resume{padding:0}
-  .rsec,.rentry{page-break-inside:avoid}
+  .resume{padding:0;border:0}
+  .resume-head{margin-bottom:1.3rem}
+  .rsec{margin-top:1.5rem}
+  .rsec h3{page-break-after:avoid;break-after:avoid}
+  .rentry{page-break-inside:avoid}
+  .rentry-top{page-break-after:avoid;break-after:avoid}
 }
 
-@page{size:A4;margin:14mm 13mm}
+@page{size:A4;margin:17mm 16mm}
