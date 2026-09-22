@@ -239,15 +239,44 @@
     <section class="panel card" role="tabpanel" id="p-projects" style="--tone:#7A56C0" aria-labelledby="t-projects" tabindex="0" hidden>
       <h2>Projects</h2>
 
-      <div class="notice">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg>
-        <p><strong>Not much on display yet.</strong> I&rsquo;m in my first term of Year 12 and this section is still being built up, so there are only a handful of projects here for now. This is where I&rsquo;ll display my best work as it&rsquo;s finished. Everything else lives on my GitHub.</p>
-      </div>
+      <p class="lead">Things I have built and finished. Each one has its code on GitHub.</p>
 
-      <a class="gh" href="https://github.com/DanielAlexanderSpiers" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5a10.5 10.5 0 0 0-3.32 20.47c.53.1.72-.23.72-.5v-1.9c-2.93.63-3.55-1.4-3.55-1.4-.48-1.23-1.17-1.55-1.17-1.55-.96-.66.07-.64.07-.64 1.06.07 1.62 1.09 1.62 1.09.94 1.62 2.47 1.15 3.07.88.1-.68.37-1.15.67-1.42-2.34-.27-4.8-1.17-4.8-5.21 0-1.15.41-2.09 1.09-2.83-.11-.27-.47-1.35.1-2.8 0 0 .88-.29 2.89 1.08a9.9 9.9 0 0 1 5.26 0c2-1.37 2.88-1.08 2.88-1.08.58 1.45.22 2.53.11 2.8.68.74 1.09 1.68 1.09 2.83 0 4.05-2.47 4.94-4.82 5.2.38.33.72.98.72 1.98v2.93c0 .28.19.61.72.5A10.5 10.5 0 0 0 12 1.5Z"></path></svg>
-        View my GitHub
-      </a>
+      <ul class="projects">
+        <li>
+          <div class="ptop">
+            <h3>Secure Chat</h3>
+            <span class="pyear">2026</span>
+          </div>
+          <p>A group chat I first wrote for school, sending everything in plain text, then rebuilt properly. It now has TLS 1.3, end-to-end encryption, accounts, friends, private messages, groups and encrypted file sharing. The server stores messages it cannot read.</p>
+          <p class="pnote">The repository keeps the original version alongside the new one, and the README shows exactly what someone watching the network sees in each.</p>
+          <ul class="ptags">
+            <li>Python</li><li>Cryptography</li><li>TLS</li><li>SQLite</li><li>Tkinter</li>
+          </ul>
+          <a class="plink" href="https://github.com/DanielAlexanderSpiers/Secure-Chat" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5a10.5 10.5 0 0 0-3.32 20.47c.53.1.72-.23.72-.5v-1.9c-2.93.63-3.55-1.4-3.55-1.4-.48-1.23-1.17-1.55-1.17-1.55-.96-.66.07-.64.07-.64 1.06.07 1.62 1.09 1.62 1.09.94 1.62 2.47 1.15 3.07.88.1-.68.37-1.15.67-1.42-2.34-.27-4.8-1.17-4.8-5.21 0-1.15.41-2.09 1.09-2.83-.11-.27-.47-1.35.1-2.8 0 0 .88-.29 2.89 1.08a9.9 9.9 0 0 1 5.26 0c2-1.37 2.88-1.08 2.88-1.08.58 1.45.22 2.53.11 2.8.68.74 1.09 1.68 1.09 2.83 0 4.05-2.47 4.94-4.82 5.2.38.33.72.98.72 1.98v2.93c0 .28.19.61.72.5A10.5 10.5 0 0 0 12 1.5Z"></path></svg>View the code</a>
+        </li>
+
+        <li>
+          <div class="ptop">
+            <h3>This website</h3>
+            <span class="pyear">2026</span>
+          </div>
+          <p>The site you are reading. Plain HTML, CSS and JavaScript with no framework and no build step, deployed on Cloudflare Workers with a script that publishes and pushes in one step.</p>
+          <p class="pnote">Scores A+ on securityheaders.com, with a strict content security policy and no inline JavaScript.</p>
+          <ul class="ptags">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Cloudflare Workers</li>
+          </ul>
+          <a class="plink" href="https://github.com/DanielAlexanderSpiers/CV-website" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5a10.5 10.5 0 0 0-3.32 20.47c.53.1.72-.23.72-.5v-1.9c-2.93.63-3.55-1.4-3.55-1.4-.48-1.23-1.17-1.55-1.17-1.55-.96-.66.07-.64.07-.64 1.06.07 1.62 1.09 1.62 1.09.94 1.62 2.47 1.15 3.07.88.1-.68.37-1.15.67-1.42-2.34-.27-4.8-1.17-4.8-5.21 0-1.15.41-2.09 1.09-2.83-.11-.27-.47-1.35.1-2.8 0 0 .88-.29 2.89 1.08a9.9 9.9 0 0 1 5.26 0c2-1.37 2.88-1.08 2.88-1.08.58 1.45.22 2.53.11 2.8.68.74 1.09 1.68 1.09 2.83 0 4.05-2.47 4.94-4.82 5.2.38.33.72.98.72 1.98v2.93c0 .28.19.61.72.5A10.5 10.5 0 0 0 12 1.5Z"></path></svg>View the code</a>
+        </li>
+      </ul>
+
+      <p class="sec">Next up</p>
+      <ul class="items">
+        <li><strong>File Integrity Monitor</strong><span class="meta">C#</span></li>
+        <li><strong>Password Auditor</strong><span class="meta">Flask, React</span></li>
+        <li><strong>Home Network Intrusion Detection</strong><span class="meta">Python, Docker</span></li>
+      </ul>
+
+      <a class="gh" href="https://github.com/DanielAlexanderSpiers" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5a10.5 10.5 0 0 0-3.32 20.47c.53.1.72-.23.72-.5v-1.9c-2.93.63-3.55-1.4-3.55-1.4-.48-1.23-1.17-1.55-1.17-1.55-.96-.66.07-.64.07-.64 1.06.07 1.62 1.09 1.62 1.09.94 1.62 2.47 1.15 3.07.88.1-.68.37-1.15.67-1.42-2.34-.27-4.8-1.17-4.8-5.21 0-1.15.41-2.09 1.09-2.83-.11-.27-.47-1.35.1-2.8 0 0 .88-.29 2.89 1.08a9.9 9.9 0 0 1 5.26 0c2-1.37 2.88-1.08 2.88-1.08.58 1.45.22 2.53.11 2.8.68.74 1.09 1.68 1.09 2.83 0 4.05-2.47 4.94-4.82 5.2.38.33.72.98.72 1.98v2.93c0 .28.19.61.72.5A10.5 10.5 0 0 0 12 1.5Z"></path></svg>View my GitHub</a>
     </section>
 
     <section class="panel card" role="tabpanel" id="p-contact" style="--tone:#1B3563" aria-labelledby="t-contact" tabindex="0" hidden>

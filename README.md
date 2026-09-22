@@ -13,7 +13,7 @@ grades, skills and projects in one place so anyone can see them.
 - **GCSEs** - full results table with a grade distribution chart
 - **Predicted grades** - filled in once the college issues them
 - **Experience** - volunteering and interests (rugby, hiking, programming)
-- **Projects** - links to things I've built, growing as I build them
+- **Projects** - cards for each finished project with its tech and a link to the code
 - **Contact** - copy my email or send a message straight from the page
 - **Resume view** - a print-friendly CV version of everything above, with a PDF download
 
