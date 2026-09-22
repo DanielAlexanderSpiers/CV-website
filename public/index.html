@@ -243,9 +243,10 @@
 
       <ul class="projects">
         <li>
-          <a class="pshot" href="https://github.com/DanielAlexanderSpiers/Secure-Chat" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-            <img src="/assets/project-secure-chat.jpg" width="880" height="440" alt="" loading="lazy">
-          </a>
+          <button class="pshot" type="button" data-full="/assets/project-secure-chat-full.jpg" aria-label="Open a larger screenshot of Secure Chat">
+            <img src="/assets/project-secure-chat.jpg" width="880" height="440" alt="The Secure Chat client, showing a group conversation" loading="lazy">
+            <span class="pzoom" aria-hidden="true">Click to enlarge</span>
+          </button>
           <div class="ptop">
             <h3>Secure Chat</h3>
             <span class="pyear">2026</span>
@@ -259,9 +260,10 @@
         </li>
 
         <li>
-          <a class="pshot" href="https://github.com/DanielAlexanderSpiers/CV-website" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-            <img src="/assets/project-website.jpg" width="880" height="440" alt="" loading="lazy">
-          </a>
+          <button class="pshot" type="button" data-full="/assets/project-website-full.jpg" aria-label="Open a larger image of this website">
+            <img src="/assets/project-website.jpg" width="880" height="440" alt="This website" loading="lazy">
+            <span class="pzoom" aria-hidden="true">Click to enlarge</span>
+          </button>
           <div class="ptop">
             <h3>This website</h3>
             <span class="pyear">2026</span>
@@ -277,6 +279,11 @@
 
       <p class="sec">In progress and planned</p>
       <ul class="items upcoming">
+        <li class="now">
+          <strong>Sleepover <span class="nowtag">Working on this</span></strong>
+          <span class="meta">Roblox &middot; Luau</span>
+          <span class="idesc">A co-op party game built with friends. Server authoritative, so the fun does not depend on everyone behaving.</span>
+        </li>
         <li>
           <strong>Neural Snake</strong>
           <span class="meta">Python &middot; NumPy</span>
@@ -286,11 +293,6 @@
           <strong>2D Physics Engine</strong>
           <span class="meta">C#</span>
           <span class="idesc">Collision detection and response written from scratch, with no game engine doing the maths for me.</span>
-        </li>
-        <li>
-          <strong>Sleepover</strong>
-          <span class="meta">Roblox &middot; Luau</span>
-          <span class="idesc">A co-op party game built with friends. Server authoritative, so the fun does not depend on everyone behaving.</span>
         </li>
       </ul>
 
@@ -480,6 +482,13 @@
 
   </article>
 
+</div>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" type="button" id="lb-close" aria-label="Close the image">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+  </button>
+  <img id="lb-image" src="" alt="">
 </div>
 
 <div class="toast" id="toast" role="status" aria-live="polite">

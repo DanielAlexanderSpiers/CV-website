@@ -149,6 +149,49 @@
 
   if (hash === 'resume') showResume(false);
 
+
+  var lightbox = document.getElementById('lightbox');
+  var lbImage = document.getElementById('lb-image');
+  var lbClose = document.getElementById('lb-close');
+  var lbOpener = null;
+
+  function openLightbox(btn) {
+    var src = btn.getAttribute('data-full');
+    if (!src || !lightbox) return;
+    lbOpener = btn;
+    var img = btn.querySelector('img');
+    lbImage.src = src;
+    lbImage.alt = img ? img.alt : '';
+    lightbox.hidden = false;
+    document.body.classList.add('lb-open');
+    void lightbox.offsetWidth;
+    lightbox.classList.add('open');
+    lbClose.focus();
+  }
+
+  function closeLightbox() {
+    if (!lightbox || lightbox.hidden) return;
+    lightbox.classList.remove('open');
+    document.body.classList.remove('lb-open');
+    setTimeout(function () {
+      lightbox.hidden = true;
+      lbImage.src = '';
+    }, 180);
+    if (lbOpener) { lbOpener.focus(); lbOpener = null; }
+  }
+
+  document.addEventListener('click', function (e) {
+    var shot = e.target.closest ? e.target.closest('.pshot') : null;
+    if (shot) { openLightbox(shot); return; }
+    if (lightbox && !lightbox.hidden && (e.target === lightbox || (e.target.closest && e.target.closest('#lb-close')))) {
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeLightbox();
+  });
+
   var WEB3FORMS_KEY = 'a765c958-0fe9-4392-938d-570e20466073';
 
   var COOLDOWN_MS = 10 * 60 * 1000;
