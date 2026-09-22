@@ -169,6 +169,12 @@
     try { window.localStorage.setItem(LAST_SENT_KEY, String(t)); } catch (err) {}
   }
 
+  function esc(value) {
+    return String(value).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
   function setStatus(kind, html) {
     statusEl.className = 'formstatus ' + kind;
     statusEl.innerHTML = html;
@@ -280,7 +286,7 @@
           })
           .then(function (data) {
             if (!data || data.success !== true) {
-              fail('FORM-03', 'The email service rejected the message' + (data && data.message ? ' (' + String(data.message).slice(0, 120) + ')' : '') + '.');
+              fail('FORM-03', 'The email service rejected the message' + (data && data.message ? ' (' + esc(String(data.message).slice(0, 120)) + ')' : '') + '.');
               return;
             }
             writeLastSent(Date.now());
@@ -292,7 +298,7 @@
             fail('FORM-02', 'The message could not reach the email service. This usually means no internet connection, or the page is running somewhere that blocks outgoing requests.');
           });
       } catch (err) {
-        fail('FORM-99', 'Something went wrong in the page: ' + (err && err.message ? err.message : 'unknown error') + '.');
+        fail('FORM-99', 'Something went wrong in the page: ' + esc(err && err.message ? err.message : 'unknown error') + '.');
       }
     });
   }

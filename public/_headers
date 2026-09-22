@@ -16,3 +16,7 @@
 
 /script.js
   Cache-Control: public, max-age=86400
+
+/Daniel-Spiers-CV.pdf
+  Cache-Control: public, max-age=3600
+  Content-Disposition: attachment; filename="Daniel-Spiers-CV.pdf"

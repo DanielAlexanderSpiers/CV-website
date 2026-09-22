@@ -10,3 +10,6 @@ IMPROVEMENTS.txt
 ROADMAP.txt
 README.txt
 .claude/
+build-pdf.bat
+pdf-build.log
+wd.log

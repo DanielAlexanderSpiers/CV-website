@@ -15,7 +15,7 @@ grades, skills and projects in one place so anyone can see them.
 - **Experience** - volunteering and interests (rugby, hiking, programming)
 - **Projects** - links to things I've built, growing as I build them
 - **Contact** - copy my email or send a message straight from the page
-- **Resume view** - a print-friendly one-page CV version of everything above
+- **Resume view** - a print-friendly CV version of everything above, with a PDF download
 
 ## How it's built
 
@@ -28,7 +28,10 @@ public/
   script.js     tab switching, resume view, copy-to-clipboard, contact form
   _headers      security headers (CSP, HSTS, X-Frame-Options and others)
   assets/       profile photo and icons
+  Daniel-Spiers-CV.pdf
 ```
+
+The PDF is rendered straight from the resume view with headless Chrome, so it always matches the page.
 
 The contact form sends through Web3Forms with a honeypot field and a client-side
 rate limit, so there's no backend to run.

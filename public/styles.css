@@ -347,14 +347,16 @@ td.g,th.g{text-align:right;padding-right:0;width:1%;white-space:nowrap}
 }
 
 .stack{display:flex;flex-direction:column;gap:1rem}
-.backbtn{
-  align-self:flex-start;display:inline-flex;align-items:center;gap:.55rem;
+.resume-bar{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
+.backbtn{display:inline-flex;align-items:center;gap:.55rem;
   font-family:var(--f-body);font-size:.9375rem;font-weight:600;cursor:pointer;border:0;
   background:var(--card);color:var(--navy-1);padding:.6rem 1.15rem;border-radius:999px;border:2px solid var(--border);
   box-shadow:var(--shadow);transition:background-color .15s ease,color .15s ease;
 }
 .backbtn:hover{background:var(--navy-1);color:#fff}
 .backbtn svg{width:15px;height:15px}
+.dlbtn{text-decoration:none;background:var(--navy-1);color:#fff;border-color:var(--navy-1)}
+.dlbtn:hover{background:var(--navy-2);border-color:var(--navy-2);color:#fff}
 
 .resume{padding:clamp(1.6rem,4vw,3rem)}
 .resume-head{border-bottom:3px solid var(--navy-1);padding-bottom:1.1rem;margin-bottom:1.6rem}
@@ -551,7 +553,7 @@ footer{
 }
 
 @media print{
-  .tabwrap,.tabbar,footer,.printbtn,.backbtn{display:none}
+  .tabwrap,.tabbar,footer,.printbtn,.backbtn,.resume-bar{display:none}
   .hero{background:#fff!important;color:#000!important}
   .hero h1,.hero .eyebrow,.hero .tagline{color:#000!important}
   .chips a{background:transparent!important;color:#000!important}
@@ -560,4 +562,8 @@ footer{
   .card{box-shadow:none;border-radius:0}
   [role="tabpanel"][hidden]{display:block!important}
   .panel{padding:0;page-break-inside:avoid}
+  .resume{padding:0}
+  .rsec,.rentry{page-break-inside:avoid}
 }
+
+@page{size:A4;margin:14mm 13mm}
