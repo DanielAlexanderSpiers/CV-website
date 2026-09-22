@@ -57,7 +57,7 @@
         if (label && original !== null) label.textContent = original;
       }, 1700);
     }).catch(function () {
-      showToast('Could not copy — the address is ' + value);
+      showToast('Could not copy. The address is ' + value);
     });
   });
 
