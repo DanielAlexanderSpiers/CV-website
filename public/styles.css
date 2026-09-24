@@ -98,7 +98,7 @@ h1{
 
 .chips{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem;margin:.4rem 0 0;padding:0;align-items:center}
 .chips a,.chips .copybtn,.printbtn{
-  display:inline-flex;align-items:center;gap:.5rem;max-width:100%;
+  display:inline-flex;align-items:center;gap:.5rem;max-width:100%;line-height:1.4rem;
   font-family:var(--f-body);font-size:.875rem;padding:.42rem .9rem;border-radius:999px;
   background:rgba(255,255,255,.18);color:#fff;text-decoration:none;border:0;cursor:pointer;word-break:break-word;
   transition:background-color .15s ease,color .15s ease;
@@ -533,7 +533,7 @@ footer{
   h1{font-size:2.1rem}
   .tagline{font-size:1rem;line-height:1.6}
   .chips{gap:.5rem}
-  .chips a,.printbtn{font-size:.9rem;padding:.55rem 1rem}
+  .chips a,.chips .copybtn,.printbtn{font-size:.9rem;padding:.55rem 1rem}
 
   .tabwrap{align-self:stretch}
   .tabbar{padding:.35rem;gap:.25rem}
