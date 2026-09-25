@@ -97,7 +97,7 @@
         </div>
         <div>
           <dt>Frameworks &amp; libraries</dt>
-          <dd><span>React.js</span><span>Flask</span></dd>
+          <dd><span>PyTorch</span><span>NumPy</span><span>React.js</span><span>Flask</span></dd>
         </div>
         <div>
           <dt>Databases</dt>
@@ -260,6 +260,23 @@
         </li>
 
         <li>
+          <button class="pshot" type="button" data-full="/assets/project-snake-ai-full.jpg" aria-label="Open a larger screenshot of Snake AI">
+            <img src="/assets/project-snake-ai.jpg" width="880" height="440" alt="Four versions of the Snake AI playing the same games side by side" loading="lazy">
+            <span class="pzoom" aria-hidden="true">Click to enlarge</span>
+          </button>
+          <div class="ptop">
+            <h3>Snake AI</h3>
+            <span class="pyear">2026</span>
+          </div>
+          <p>An AI that taught itself to play Snake. The neural network is never shown how to play: it looks at the board, picks a move, and is rewarded for eating apples and penalised for crashing. A thousand snakes train in parallel using Deep Q-Learning, and every move they make becomes training data.</p>
+          <p class="pnote">I built five versions, each able to see more of the board. The first averaged 29 apples a game. The latest, V5, fills the entire 20 by 20 board, all 397 apples, in every game.</p>
+          <ul class="ptags">
+            <li>Python</li><li>PyTorch</li><li>Reinforcement learning</li><li>NumPy</li><li>Numba</li><li>Pygame</li>
+          </ul>
+          <a class="plink" href="https://github.com/DanielAlexanderSpiers/SnakeAI" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5a10.5 10.5 0 0 0-3.32 20.47c.53.1.72-.23.72-.5v-1.9c-2.93.63-3.55-1.4-3.55-1.4-.48-1.23-1.17-1.55-1.17-1.55-.96-.66.07-.64.07-.64 1.06.07 1.62 1.09 1.62 1.09.94 1.62 2.47 1.15 3.07.88.1-.68.37-1.15.67-1.42-2.34-.27-4.8-1.17-4.8-5.21 0-1.15.41-2.09 1.09-2.83-.11-.27-.47-1.35.1-2.8 0 0 .88-.29 2.89 1.08a9.9 9.9 0 0 1 5.26 0c2-1.37 2.88-1.08 2.88-1.08.58 1.45.22 2.53.11 2.8.68.74 1.09 1.68 1.09 2.83 0 4.05-2.47 4.94-4.82 5.2.38.33.72.98.72 1.98v2.93c0 .28.19.61.72.5A10.5 10.5 0 0 0 12 1.5Z"></path></svg>View the code</a>
+        </li>
+
+        <li>
           <button class="pshot" type="button" data-full="/assets/project-website-full.jpg" aria-label="Open a larger image of this website">
             <img src="/assets/project-website.jpg" width="880" height="440" alt="This website" loading="lazy">
             <span class="pzoom" aria-hidden="true">Click to enlarge</span>
@@ -280,19 +297,14 @@
       <p class="sec">In progress and planned</p>
       <ul class="items upcoming">
         <li class="now">
-          <strong>Neural Snake <span class="nowtag">Up next</span></strong>
-          <span class="meta">Python &middot; NumPy</span>
-          <span class="idesc">Snake played by a neural network that teaches itself, starting from random flailing and improving over generations.</span>
-        </li>
-        <li>
-          <strong>2D Physics Engine</strong>
+          <strong>2D Physics Engine <span class="nowtag">Up next</span></strong>
           <span class="meta">C#</span>
           <span class="idesc">Collision detection and response written from scratch, with no game engine doing the maths for me.</span>
         </li>
         <li>
-          <strong>Home Network Intrusion Detection</strong>
-          <span class="meta">Python &middot; Scapy &middot; React &middot; Docker</span>
-          <span class="idesc">A sniffer watching my own network for port scans, ARP spoofing and odd DNS traffic, reporting what it catches to a live dashboard.</span>
+          <strong>AI Network Intrusion Detection</strong>
+          <span class="meta">Python &middot; PyTorch &middot; Scapy &middot; React &middot; Docker</span>
+          <span class="idesc">A neural network that learns what normal traffic on my home network looks like and flags anything that does not fit. Benchmarked on the public CIC-IDS2017 attack dataset, then tested live against port scans, ARP spoofing and brute-force attacks I launch at it, with every alert mapped to MITRE ATT&amp;CK on a live dashboard.</span>
         </li>
       </ul>
 
@@ -338,7 +350,7 @@
 
   <footer>
     <span>&copy; 2026 Daniel Spiers</span>
-    <span>Updated 10 September 2026</span>
+    <span>Updated 25 September 2026</span>
   </footer>
 
 </div>
@@ -386,7 +398,7 @@
         </div>
         <div>
           <dt>Frameworks &amp; libraries</dt>
-          <dd><span>React.js</span><span>Flask</span></dd>
+          <dd><span>PyTorch</span><span>NumPy</span><span>React.js</span><span>Flask</span></dd>
         </div>
         <div>
           <dt>Databases</dt>
@@ -401,6 +413,42 @@
           <dd><span>Docker</span></dd>
         </div>
       </dl>
+    </section>
+
+    <section class="rsec" style="--tone:#7A56C0">
+      <h3>Projects</h3>
+
+      <div class="rentry">
+        <div class="rentry-top">
+          <strong>Secure Chat</strong>
+          <span class="when">Python &middot; 2026</span>
+        </div>
+        <ul>
+          <li>Rebuilt a plain-text school chat app into an encrypted messenger with TLS 1.3, end-to-end encrypted private messages, groups and file sharing.</li>
+          <li>The server stores messages it cannot read. The README shows exactly what someone watching the network sees before and after.</li>
+        </ul>
+      </div>
+
+      <div class="rentry">
+        <div class="rentry-top">
+          <strong>Snake AI</strong>
+          <span class="when">Python &middot; PyTorch &middot; 2026</span>
+        </div>
+        <ul>
+          <li>A neural network that taught itself Snake through reinforcement learning (Deep Q-Learning), training 1,000 games in parallel.</li>
+          <li>Five versions, from 29 apples a game on average to filling the entire 20 by 20 board (397 apples) in every game.</li>
+        </ul>
+      </div>
+
+      <div class="rentry">
+        <div class="rentry-top">
+          <strong>This website</strong>
+          <span class="when">HTML &middot; CSS &middot; JavaScript &middot; 2026</span>
+        </div>
+        <ul>
+          <li>Hand-built CV site on Cloudflare Workers, scoring A+ on securityheaders.com with a strict content security policy.</li>
+        </ul>
+      </div>
     </section>
 
     <section class="rsec" style="--tone:#5457C8">
