@@ -301,6 +301,16 @@
           <span class="meta">Python &middot; PyTorch &middot; Scapy &middot; React &middot; Docker</span>
           <span class="idesc">A neural network that learns what normal traffic on my home network looks like and flags anything that does not fit. Benchmarked on the public CIC-IDS2017 attack dataset, then tested live against port scans, ARP spoofing and brute-force attacks I launch at it, with every alert mapped to MITRE ATT&amp;CK on a live dashboard.</span>
         </li>
+        <li>
+          <strong>SSH Honeypot</strong>
+          <span class="meta">Java &middot; MySQL &middot; Flask &middot; React &middot; Docker</span>
+          <span class="idesc">A fake SSH server on an isolated cloud machine that lets attackers think they have logged in, and records every password, command and source address they try. A live dashboard shows attacks over time, the most common passwords and where attempts come from, with each technique mapped to MITRE ATT&amp;CK. The traffic it captures becomes real-world test data for my intrusion detector.</span>
+        </li>
+        <li>
+          <strong>Phishing Email Analyser</strong>
+          <span class="meta">Python &middot; Flask &middot; React &middot; MySQL &middot; Docker</span>
+          <span class="idesc">Upload a suspicious email and get a verdict with the reasons behind it. It checks the SPF, DKIM and DMARC results, traces the route the email took, pulls out every link and attachment and checks them against public threat feeds, then scores the risk. It is the same triage a security analyst does by hand, done in seconds.</span>
+        </li>
       </ul>
 
       <a class="gh" href="https://github.com/DanielAlexanderSpiers" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5a10.5 10.5 0 0 0-3.32 20.47c.53.1.72-.23.72-.5v-1.9c-2.93.63-3.55-1.4-3.55-1.4-.48-1.23-1.17-1.55-1.17-1.55-.96-.66.07-.64.07-.64 1.06.07 1.62 1.09 1.62 1.09.94 1.62 2.47 1.15 3.07.88.1-.68.37-1.15.67-1.42-2.34-.27-4.8-1.17-4.8-5.21 0-1.15.41-2.09 1.09-2.83-.11-.27-.47-1.35.1-2.8 0 0 .88-.29 2.89 1.08a9.9 9.9 0 0 1 5.26 0c2-1.37 2.88-1.08 2.88-1.08.58 1.45.22 2.53.11 2.8.68.74 1.09 1.68 1.09 2.83 0 4.05-2.47 4.94-4.82 5.2.38.33.72.98.72 1.98v2.93c0 .28.19.61.72.5A10.5 10.5 0 0 0 12 1.5Z"></path></svg>View my GitHub</a>
