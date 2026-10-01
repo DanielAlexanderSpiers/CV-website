@@ -251,10 +251,10 @@
             <h3>Secure Chat</h3>
             <span class="pyear">2026</span>
           </div>
-          <p>A group chat I first wrote for school, sending everything in plain text, then rebuilt properly. It now has TLS 1.3, end-to-end encryption, accounts, friends, private messages, groups and encrypted file sharing. The server stores messages it cannot read.</p>
-          <p class="pnote">The repository keeps the original version alongside the new one, and the README shows exactly what someone watching the network sees in each.</p>
+          <p>A group chat I first wrote for school, sending everything in plain text, then rebuilt properly. It now has TLS 1.3, end-to-end encryption and passwordless accounts, where an Ed25519 key on your device is your identity. The server only relays messages it cannot read.</p>
+          <p class="pnote">The repository keeps the original version alongside the new one, and the README shows exactly what someone watching the network sees in each. It also documents a flaw I found in my own key exchange and how I fixed it.</p>
           <ul class="ptags">
-            <li>Python</li><li>Cryptography</li><li>TLS</li><li>SQLite</li><li>Tkinter</li>
+            <li>Python</li><li>Cryptography</li><li>TLS</li><li>Ed25519</li><li>Tkinter</li>
           </ul>
           <a class="plink" href="https://github.com/DanielAlexanderSpiers/Secure-Chat" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5a10.5 10.5 0 0 0-3.32 20.47c.53.1.72-.23.72-.5v-1.9c-2.93.63-3.55-1.4-3.55-1.4-.48-1.23-1.17-1.55-1.17-1.55-.96-.66.07-.64.07-.64 1.06.07 1.62 1.09 1.62 1.09.94 1.62 2.47 1.15 3.07.88.1-.68.37-1.15.67-1.42-2.34-.27-4.8-1.17-4.8-5.21 0-1.15.41-2.09 1.09-2.83-.11-.27-.47-1.35.1-2.8 0 0 .88-.29 2.89 1.08a9.9 9.9 0 0 1 5.26 0c2-1.37 2.88-1.08 2.88-1.08.58 1.45.22 2.53.11 2.8.68.74 1.09 1.68 1.09 2.83 0 4.05-2.47 4.94-4.82 5.2.38.33.72.98.72 1.98v2.93c0 .28.19.61.72.5A10.5 10.5 0 0 0 12 1.5Z"></path></svg>View the code</a>
         </li>
@@ -297,12 +297,7 @@
       <p class="sec">In progress and planned</p>
       <ul class="items upcoming">
         <li class="now">
-          <strong>2D Physics Engine <span class="nowtag">Up next</span></strong>
-          <span class="meta">C#</span>
-          <span class="idesc">Collision detection and response written from scratch, with no game engine doing the maths for me.</span>
-        </li>
-        <li>
-          <strong>AI Network Intrusion Detection</strong>
+          <strong>AI Network Intrusion Detection <span class="nowtag">Up next</span></strong>
           <span class="meta">Python &middot; PyTorch &middot; Scapy &middot; React &middot; Docker</span>
           <span class="idesc">A neural network that learns what normal traffic on my home network looks like and flags anything that does not fit. Benchmarked on the public CIC-IDS2017 attack dataset, then tested live against port scans, ARP spoofing and brute-force attacks I launch at it, with every alert mapped to MITRE ATT&amp;CK on a live dashboard.</span>
         </li>
@@ -424,8 +419,8 @@
           <span class="when">Python &middot; 2026</span>
         </div>
         <ul>
-          <li>Rebuilt a plain-text school chat app into an encrypted messenger with TLS 1.3, end-to-end encrypted private messages, groups and file sharing.</li>
-          <li>The server stores messages it cannot read. The README shows exactly what someone watching the network sees before and after.</li>
+          <li>Rebuilt a plain-text school chat app into an end-to-end encrypted group chat with TLS 1.3 and passwordless, key-based accounts.</li>
+          <li>The server only relays messages it cannot read. Found and fixed a key-substitution flaw in my own protocol, documented in the README.</li>
         </ul>
       </div>
 
